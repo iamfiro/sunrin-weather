@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title></title>
+</head>
+<body>
+    <h1 id="weather">날씨 아직 안불러와짐.</h1>
+    <h2>😎 선린인고 대표 반장 이태겸 😎</h2>
+    <img src="/goormandsun.png" width="100">
+</body>
+</html>
+<style>
+    @import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+    body, h1, h2 {
+      transition: background-color 5s ease; /* 배경색이 부드럽게 변경되도록 트랜지션 효과 추가 */
+      text-align: center;
+      font-family: 'Wanted Sans', sans-serif;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <script>
+  // 색상 배열
+  var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  var currentIndex = 0;
+  
+  // 색상 변경 함수
+  function changeColor() {
+    document.body.style.backgroundColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length; // 다음 색상으로 인덱스 업데이트
+  }
+  
+  // 1초마다 배경색 변경
+  setInterval(changeColor, 1500);
+  </script>
+  
+  </body>
